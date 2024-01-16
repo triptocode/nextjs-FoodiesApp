@@ -1,3 +1,15 @@
+pre-built:
+npm 10.2.4
+node 20.11.0
+
+version:
+next.js 14
+
+command:
+npx create-next-app@latest
+projectname
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
