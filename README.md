@@ -5,9 +5,8 @@ node 20.11.0
 version:
 next.js 14
 
-command:
-npx create-next-app@latest
-
+command:  
+npx create-next-app@latest  
 projectname
 
 
