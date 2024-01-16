@@ -6,7 +6,9 @@ version:
 next.js 14
 
 command:  
+  
 npx create-next-app@latest  
+
 projectname
 
 
