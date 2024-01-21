@@ -1,30 +1,32 @@
-import Link from "next/link";
-import logoImg from "@/assets/logo.png";
-import classes from "./main-header.module.css";
-import Image from "next/image";
-import MainHeaderBackground from "./main-header-background";
+import Link from 'next/link';
+import Image from 'next/image';
 
-export default function MainHeader(){
-    return( 
-       <>
-        <MainHeaderBackground/>
-        <header className= {classes.header}>
-        <Link className= {classes.logo} href="/">
-            <Image src={logoImg} alt="A palte with food on it" priority></Image>
-            {/* <img src={logoImg.src} alt="A palte with food on it"></img> */}
+import MainHeaderBackground from './main-header-background';
+import logoImg from '@/assets/logo.png';
+import classes from './main-header.module.css';
+import NavLink from './nav-link';
+
+export default function MainHeader() {
+  return (
+    <>
+      <MainHeaderBackground />
+      <header className={classes.header}>
+        <Link className={classes.logo} href="/">
+          <Image src={logoImg} alt="A plate with food on it" priority />
+          NextLevel Food
         </Link>
-        <nav className= {classes.nav}>
-            <ul>
-                <li>
-                    <Link href="/meas">Browse Meals</Link>
-                </li>
-                <li>
-                    <Link href="/community">Foodies Community</Link>
-                </li>
-            </ul>
-        </nav>
-        </header>
-     </>
-    )
-}
 
+        <nav className={classes.nav}>
+          <ul>
+            <li>
+              <NavLink href="/meals">Browse Meals</NavLink>
+            </li>
+            <li>
+              <NavLink href="/community">Foodies Community</NavLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </>
+  );
+}
