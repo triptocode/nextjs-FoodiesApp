@@ -196,4 +196,4 @@ async function initData() {
   }
 }
 
-initData();
+initData(); // insert함수 호출
