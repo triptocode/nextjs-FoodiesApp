@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  background: #17021E;
+  background: #0c0010;
   /* background: radial-gradient(#282c34, #282c34); */
 }
 
@@ -19,6 +19,13 @@ body {
 .error {
   margin-top: 5rem;
   text-align: center;
+}
+
+.not-found h3,
+.error h3{
+  font-size: 3rem;
+  font-weight: 500;
+  color: #d0d750;
 }
 
 .not-found h1,
