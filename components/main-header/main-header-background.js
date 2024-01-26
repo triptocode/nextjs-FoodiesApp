@@ -9,7 +9,8 @@ export default function MainHeaderBackground(){
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop
                 offset="0%"
-                style={{ stopColor: '#290336', stopOpacity: '1' }} // - left side in header
+                //  style={{ stopColor: '#150346', stopOpacity: '1' }} // - left side in header
+                style={{ stopColor: '#290336', stopOpacity: '1' }}
                 // style={{ stopColor: '#59453c', stopOpacity: '1' }}  
               />
               <stop
