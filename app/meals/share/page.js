@@ -57,7 +57,6 @@ import ImagePicker from '@/components/meals/image-picker';
 import classes from './page.module.css';
 // import {shareMeal} from '@lib/actions'; <- 오류 https://nextjs.org/docs/messages/module-not-found: 아래경로와 차이는?@뒤에 /
 import { shareMeal } from '@/lib/actions';
-
 import MealsFormSubmit from '@/components/meals/meals-form-submit';
 
 export default function ShareMealPage() {
@@ -72,12 +71,14 @@ export default function ShareMealPage() {
       </header>
       <main className={classes.main}>
 
+
+      {/* <form action="URL">  // Where to send the form-data when the form is submitted.</form> */}
         <form className={classes.form} action={shareMeal} >
           <div className={classes.row}>
             <p> 
               {/* label htmlFor 와 input id 키워드가 동일해야 마우스로 글자 라벨 클릭시 input도 같이 잡힘 */}
               <label htmlFor="name">Your name</label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="username" required />
             </p>
             <p>
               <label htmlFor="email">Your email</label>
